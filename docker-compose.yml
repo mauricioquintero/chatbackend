@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: chatuser
+      POSTGRES_PASSWORD: chatpassword
+      POSTGRES_DB: chatdb
+    ports:
+      - "5432:5432"
